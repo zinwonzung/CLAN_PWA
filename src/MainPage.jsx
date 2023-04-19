@@ -2,7 +2,6 @@ import { Container, Nav, Navbar, Button } from 'react-bootstrap';
 import { Routes, Route, Link } from 'react-router-dom';
 import Mainpic from './img/Dreamscape.jpeg';
 import Mileage from './Page/Mileage'; // Mileage 컴포넌트 import
-import Login from './Page/Login';
 import './MainPage.css';
 
 
@@ -19,7 +18,7 @@ function MainPage() {
       
       <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '500px', position: 'relative'}}>
         <Link to='/'>
-          <div style={{position: 'absolute', top: '45%', left: '50%', transform: 'translate(-50%, -50%)', color: 'black', fontSize: '3.5rem', cursor: 'pointer'}}>CL AN</div>
+          <div style={{position: 'absolute', top: '45%', left: '50%', transform: 'translate(-50%, -50%)', color: 'black', fontSize: '3.5rem', cursor: 'pointer'}}>PL AN</div>
         </Link>
         <img
           src={Mainpic}
@@ -29,19 +28,19 @@ function MainPage() {
           alt="Trash logo"
         />
       </div>
-      <div style={{display: 'flex', justifyContent: 'center', marginTop: '20px'}}>
-        <Link to='/Signup'> {/* "/Mileage" 경로로 이동하는 Link */}
-        <Button variant="dark" style={{backgroundColor: 'black', color: 'white', fontSize: '1rem', padding: '0.5rem 2rem'}}>Signup</Button>
+
+      
+      <div style={{display: 'flex', justifyContent: 'center', marginTop: '40px'}}>
+        <Link to='/Mileage'> {/* "/Mileage" 경로로 이동하는 Link */}
+        <Button variant="dark" style={{backgroundColor: 'black', color: 'white', fontSize: '1.3rem', padding: '0.8rem 2.5rem'}}>시작하기</Button>
         </Link>
         
       </div>
-      <div style={{display: 'flex', justifyContent: 'center', marginTop: '20px'}}>
-        <Link to='/Login'> {/* "/Mileage" 경로로 이동하는 Link */}
-          <Button variant="dark" style={{backgroundColor: 'black', color: 'white', fontSize: '1rem', padding: '0.5rem 2.3rem'}}>Login </Button>
-        </Link>
-
+      
+        
+     
       </div>
-    </div>
+    
   );
 }
 

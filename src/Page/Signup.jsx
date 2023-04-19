@@ -17,6 +17,9 @@ function Signup() {
 
   return (
     <div className="form-container">
+      <Link to='/'>
+          <div style={{position: 'absolute', top: '4%', left: '4%', transform: 'translate(-50%, -50%)', color: 'black', fontSize: '2rem', cursor: 'pointer'}}>PL AN</div>
+        </Link>
       <h1>SIGNUP</h1>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
@@ -26,10 +29,8 @@ function Signup() {
         <button className="button" type="submit">Signup</button>
       </form>
       <div style={{display: 'flex', justifyContent: 'center', marginTop: '20px'}}>
-        <Link to='/'> {/* "/Mileage" 경로로 이동하는 Link */}
-        <Button variant="dark" style={{backgroundColor: 'white', color: 'black', fontSize: '0.5rem', padding: '0.5rem 9rem'}}>Home</Button>
-        </Link>
         </div>
+        
     </div>
   );
 }
